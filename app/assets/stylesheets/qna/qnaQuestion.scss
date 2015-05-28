@@ -1,0 +1,25 @@
+.qnaQuestion {
+  &.qnaQuestion-show {
+    .c-title {
+      border-bottom: 1px solid #dedede;
+      margin-bottom: 1em;
+    }
+    .c-content {
+    }
+    .c-user {
+      border-top: 1px solid #dedede;
+      margin-top: 1em;
+      text-align: right;
+    }
+  }
+  .qnaQuestion-item {
+    .c-title {
+      font-size: 22px;
+      padding: 3px 0;
+    }
+    .c-info {
+      font-size: 14px;
+      text-align: right;
+    }
+  }
+}

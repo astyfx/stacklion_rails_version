@@ -1,0 +1,14 @@
+* {
+  font-family: Lato, 'Noto-Sans', arial, sans-serif;
+}
+
+body {
+  background-color: #edeeef;
+}
+
+a {
+  color: #3681B3;
+  &:hover {
+    text-decoration: none;
+  }
+}

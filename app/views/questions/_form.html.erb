@@ -1,0 +1,11 @@
+<%= simple_form_for(@question) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-group">
+    <%= f.input :title, input_html: { class: 'form-control' } %>
+  </div>
+  <div class="form-group">
+    <%= f.input :content, input_html: { class: 'form-control' } %>
+  </div>
+    <%= f.button :submit, class: 'btn btn-default'  %>
+<% end %>

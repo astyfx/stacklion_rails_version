@@ -1,0 +1,19 @@
+.qnaNavbar {
+  background-color: rgba(51, 51, 51, 1);
+  border-bottom: 1px solid rgba(33, 33, 33, 1);
+  @include box-shadow(0 2px 2px -2px rgba(0, 0, 0, .52));
+  .navbar-brand {
+    color: #ff9900;
+  }
+  a {
+    color: white;
+    &:hover {
+
+    }
+  }
+  .nav > li > a:hover,
+  .nav > li > a:focus {
+    background: transparent;
+  }
+}
+

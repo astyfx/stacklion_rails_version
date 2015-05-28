@@ -1,0 +1,23 @@
+<!--<p id="notice"><%= notice %></p>-->
+<div class="container">
+  <div class="qnaTitle qnaTitle--pageHeader">질문 리스트</div>
+</div>
+<div class="container">
+  <div class="qnaQuestion qnaQuestion--list">
+    <% @questions.each do |question| %>
+        <div class="qnaQuestion-item qnaPanel">
+          <div class="c-title">
+            <%= link_to question.title, question_path(question) %>
+            <div class="u-pullRight">
+
+            </div>
+          </div>
+          <div class="c-info">
+            <%= time_ago_in_words(question.created_at) %>
+          </div>
+        </div>
+    <% end %>
+  </div>
+</div>
+
+<%= link_to 'New Question', new_question_path, class: "btn btn-default" %>

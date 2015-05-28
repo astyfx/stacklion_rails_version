@@ -1,0 +1,9 @@
+.qnaTitle {
+  padding: 10px 0;
+  &.qnaTitle--pageHeader {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #dedede;
+  }
+}
