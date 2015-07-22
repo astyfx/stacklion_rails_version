@@ -6,6 +6,15 @@ class QuestionsController < ApplicationController
   # GET /questions.json
   def index
     @questions = Question.all
+
+
+    @test_question = Question.new
+    @test_question.title = 'title'
+    @test_question.content = '본문'
+
+    print @test_question.title
+
+    <%= @test_question.title %>
   end
 
   # GET /questions/1
@@ -27,6 +36,9 @@ class QuestionsController < ApplicationController
   def create
     @question = Question.new(question_params)
     @question.user = current_user
+
+    # @question.questions_tags.new(:tag_id => '1')
+
 
     respond_to do |format|
       if @question.save

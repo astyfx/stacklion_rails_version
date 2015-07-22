@@ -1,7 +1,7 @@
 <!--<p id="notice"><%= notice %></p>-->
 <div class="qnaQuestion qnaQuestion-show qnaPanel">
   <div class="c-title">
-    <h3>제목 : <%= @question.title %></h3>
+    <%= @question.title %>
   </div>
   <div class="c-content">
     <%= markdown(@question.content) %>

@@ -5,7 +5,7 @@
     <%= f.input :title, input_html: { class: 'form-control' } %>
   </div>
   <div class="form-group">
-    <%= f.input :content, input_html: { class: 'form-control' } %>
+    <%= f.input :content, as: :pagedown, input_html: { preview: true, rows: 20 } %>
   </div>
     <%= f.button :submit, class: 'btn btn-default'  %>
 <% end %>

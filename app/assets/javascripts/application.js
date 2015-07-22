@@ -13,5 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
 //= require bootstrap
+//= require pagedown_bootstrap
+//= require pagedown_init
+//= require qna_base
+//= require qna_scripts
+
+//= require_tree .

@@ -40,6 +40,8 @@ gem 'bootstrap-sass'
 gem 'simple_form'
 
 gem 'redcarpet'
+gem 'pagedown-bootstrap-rails'
+gem 'font-awesome-rails'
 
 gem 'letter_opener', group: :development
 
